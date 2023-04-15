@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/home/logo.png" />
+    <title>Phoneviet.vn</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col__left col-lg-6">
+            <div class="item">
+              <span><i class="fa-solid fa-phone"></i>+021-95-51-84</span>
+              <span
+                ><i class="fa-solid fa-envelope"></i>mobileviet@gmail.com</span
+              >
+              <span
+                ><i class="fa-solid fa-location-dot"></i>523 Lê Đức Thọ, P.16,
+                GV, HCM</span
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 text-end">
+            <div class="item">
+              <span><i class="fa-regular fa-user"></i>My Account</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- navbar -->
+    <nav class="nav">
+      <div class="container">
+        <div>
+          <a class="logo" href="/index.html">Phone<span>viet.vn</span></a>
+        </div>
+        <div class="navbar navbar-expand-lg bg-body-tertiary">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Điện Thoại</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Taplet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Laptop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Phụ kiện</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Smartwatch</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tin Tức</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="input form-control me-2"
+                type="search"
+                placeholder="Bạn muốn tìm gì..."
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="quatityCart">
+          <a
+            class="addCart"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <div class="quantity"><p id="quantityItem">0</p></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- colection -->
+   
+    <!-- carousel -->
+    <section class="carousel">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/assets/home/banner1.avif"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h2>CHÀO HÈ RỰC RỠ</h2>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/home/banner2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/home/banner3.avif" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p> -->
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="select">
+      <div class="container">
+        
+      </div>
+    </section>
+
+    <!-- product -->
+    <section class="product">
+      <header class="product-title">
+        <div class="container">
+          <h2>sản phẩm nổi bật</h2>
+          <select class="form-select" id="phoneType" onchange="searchType()">
+            <option value="totalType" selected>Tất cả điện thoại</option>
+            <option value="Samsung">Samsung</option>
+            <option value="iPhone">iPhone</option>
+            <option value="Oppo">Oppo</option>
+            <option value="Oppo">Xiaomi</option>
+          </select>
+        </div>
+      </header>
+      <main class="product-main">
+        <div class="container">
+          <div class="list" id="productList"></div>
+        </div>
+      </main>
+    </section>
+
+    <!-- Modal Cart -->
+    <section class="cartList hiddenCart" id="cart">
+      <div
+        class="modal fade modal-dialog-scrollable"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Giỏ Hàng</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div id="modal-body" class="modal-body">
+              <form action="">
+                <table class="table">
+                  <tbody class="table-body" id="tbodyCart">
+                    <!-- chèn cart -->
+                  </tbody>
+                </table>
+                <div class="price-total" id="price-total">
+                  <!-- chèn tổng giá -->
+                  <!-- <p>Tổng thanh toán <span>(0 sản phẩm):</span> <span class="amount" id="amount">0</span></p> -->
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <!-- <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button> -->
+              <button type="button" class="btn btn-success">Thanh Toán</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- product detail -->
+    <section class="productDetail">
+      <div
+        class="modal fade"
+        id="productModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                CHI TIẾT SẢN PHẨM
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <img src="./img/226df2d88df0b8571244a4a289698ace.jpg" alt="" />
+                <div>
+                  <h4>Cấu hình điện thoại</h4>
+                  <table class="table table-striped">
+                    <tbody>
+                      <tr>
+                        <td>Màn hình:</td>
+                        <td>full</td>
+                      </tr>
+                      <tr>
+                        <td>Camera sau:</td>
+                        <td>full</td>
+                      </tr>
+                      <tr>
+                        <td>Camera trước:</td>
+                        <td>full</td>
+                      </tr>
+                      <tr>
+                        <td>Pin:</td>
+                        <td>full</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>Mô tả: đẹp</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+              <button type="button" class="btn btn-success">
+                THÊM VÀO GIỎ HÀNG
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="item">
+                <h3 class="footer-title">About Us</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut.
+                </p>
+                <ul class="footer__links">
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-location-dot"></i>523 Lê Đức Thọ,
+                      P.16, GV, HCM</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-phone"></i>+021-95-51-84</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-envelope"></i
+                      >mobileviet@gmail.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="item">
+                <h3 class="footer-title">Thông tin</h3>
+                <ul class="footer-links">
+                  <li><a href="#">Tin tức</a></li>
+                  <li><a href="#">Giới thiệu</a></li>
+                  <li><a href="#">Phương thức thanh toán</a></li>
+                  <li><a href="#">Tuyển dụng</a></li>
+                  <li><a href="#">Đánh giá</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="item">
+                <h3 class="footer-title">Chính sách</h3>
+                <ul class="footer-links">
+                  <li><a href="#">Thu cũ đổi mới</a></li>
+                  <li><a href="#">Giao hàng</a></li>
+                  <li><a href="#">Chính sách bảo hành</a></li>
+                  <li><a href="#">Giải quyết khiếu nại</a></li>
+                  <li><a href="#">Bảo mật thông tin</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="item">
+                <h3 class="footer-title">Dịch vụ</h3>
+                <ul class="footer-links">
+                  <li><a href="#">Lịch sử mua hàng</a></li>
+                  <li><a href="#">Mua trả góp</a></li>
+                  <li><a href="#">In hóa đơn điện tử</a></li>
+                  <li><a href="#">Check IMEI</a></li>
+                  <li><a href="#">Chất lượng phục vụ</a></li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <span class="copyright">
+            CÔNG TY TNHH CÔNG NGHỆ MOBILE VIET <br />
+            523/45 Lê Đức Thọ, Phường 16, Quận Gò Vấp, TP Hồ Chí Minh.
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- javascript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
+      integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="model/product.js"></script>
+    <script src="model/cart.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
